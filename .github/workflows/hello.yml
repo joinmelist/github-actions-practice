@@ -12,4 +12,18 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v6
-      - run: echo "Hello from GitHub Actions!"
+
+      - name: hello print
+        run: echo "Hello from GitHub Actions!"
+
+      - name: currect datetime
+        run: echo $(date)
+
+      - name: get os name
+        run: echo $(hostname)
+
+      - name: list of files
+        run: echo $(ls -la)
+
+      - name: repo branch name
+        run: echo "Branch name :- ${{ github.ref_name }}"
