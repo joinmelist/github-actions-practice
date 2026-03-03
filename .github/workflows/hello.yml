@@ -16,11 +16,14 @@ jobs:
       - name: hello print
         run: echo "Hello from GitHub Actions!"
 
-      - name: currect datetime
+      - name: current datetime
         run: echo $(date)
 
       - name: get os name
         run: echo $(hostname)
+
+      - name: error get
+        run: apt-got update
 
       - name: list of files
         run: echo $(ls -la)
