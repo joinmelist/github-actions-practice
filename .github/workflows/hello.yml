@@ -1,0 +1,15 @@
+
+
+
+name: first git action
+
+on:
+   push
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v6
+      - run: echo "Hello from GitHub Actions!"
