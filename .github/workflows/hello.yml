@@ -23,7 +23,7 @@ jobs:
         run: echo $(hostname)
 
       - name: error get
-        run: apt-got update
+        run: apt-get update
 
       - name: list of files
         run: echo $(ls -la)
